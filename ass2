@@ -1,0 +1,19 @@
+#include<stdio.h>
+main()
+{
+	int i,n,even,odd;
+	i=1;
+	even=odd=0;
+	scanf("%d",&n);
+	while(i<=n)
+	{
+		printf("%d \n",i);
+		if(i%2==0)
+		even=even+i;
+		else
+		odd=odd+i;
+		i++;
+		}	
+		printf("Even sum=%d\nodd sum=%d",even,odd);
+		printf("\nDifference between even sum and odd sum is%d",even-odd);
+}
